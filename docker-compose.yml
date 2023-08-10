@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  journeyapp:
+    image: ${DOCKER_REGISTRY-}journeyapp
+    build:
+      context: .
+      dockerfile: JourneyApp/Dockerfile
